@@ -21,6 +21,13 @@ ip -a
 ```bash
 vagrant up
 ```
+### Setup kubectl
+```bash
+// get config from master node
+vagrant ssh -c "cat \$HOME/.kube/config"
+// append configuration to kube config on the host
+nano $HOME/.kube/config
+```
 ### Install nginx ingress
 ```bash
 // after cluster bootstrap
@@ -34,5 +41,3 @@ vagrant halt
 ```bash
 vagrant destroy -f
 ```
-## Internal folder
-This folder is meant to store all kube yaml files (deployments, services, helm charts, etc...).
