@@ -1,4 +1,2 @@
 .vagrant
 env.yml
-internal/*
-!internal/.gitkeep
